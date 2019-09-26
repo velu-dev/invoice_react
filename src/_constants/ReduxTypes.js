@@ -1,0 +1,63 @@
+
+/* AUTH */
+export const AUTH_INFO = 'AUTH_INFO';
+export const LOGIN_USER = 'LOGIN_USER';
+export const GET_CURRENT_USER = 'GET_CURRENT_USER';
+export const SIGN_UP = 'SIGN_UP';
+export const LINK_EXPIRED = 'LINK_EXPIRED';
+export const RESET_PASSWORD = 'RESET_PASSWORD';
+export const AUTH_UPDATE = 'AUTH_UPDATE';
+export const RESET_EMAIL = 'RESET_EMAIL';
+export const CONNECT_STRIPE = 'CONNECT_STRIPE';
+
+
+/*User */
+export const MYBILLING_LIST = 'MYBILLING_LIST';
+export const ACCOUNT_DETAILS = 'ACCOUNT_DETAILS';
+export const DELETE_CARD = 'DELETE_CARD';
+export const ADD_CARD = 'ADD_CARD';
+export const DEFAULT_CARD = 'DEFAULT_CARD';
+export const DELETE_ACCOUNT = 'DELETE_ACCOUNT';
+export const INVOICE_REDIRECT_URL = 'INVOICE_REDIRECT_URL';
+export const BUY_PLAN = 'BUY_PLAN';
+export const STRIPE_ACCOUNT = 'STRIPE_ACCOUNT';
+export const GET_CARDS = 'GET_CARDS';
+export const SYNC_WITH_STRIPE = 'SYNC_WITH_STRIPE';
+export const STRIPE_DISCONNECT = 'STRIPE_DISCONNECT';
+export const BUY_NEW_PLAN = 'BUY_NEW_PLAN';
+export const GET_PLAN_STATUS = 'GET_PLAN_STATUS';
+
+
+/*Admin Auth*/
+export const LOGIN_ADMIN = 'LOGIN_ADMIN';
+export const GET_ADMIN_USER = 'GET_ADMIN_USER';
+export const FORGOT_PASSWORD = 'FORGOT_PASSWORD';
+export const CHANGE_PASSWORD = 'CHANGE_PASSWORD';
+
+
+/*Admin Users */
+export const ADD_USER = 'ADD_USER';
+export const USER_LIST = 'USER_LIST';
+export const GET_USER = 'GET_USER';
+export const UPDATE_USER = 'UPDATE_USER';
+export const UPDATE_USER_STATUS = 'UPDATE_USER_STATUS';
+export const DELETE_USER = 'DELETE_USER';
+
+/*Admin Subscription */
+export const SUBSCRIPTION_PLANS = 'SUBSCRIPTION_PLANS';
+export const ADD_SUBSCRIPTION = 'ADD_SUBSCRIPTION';
+export const SUBSCRIPTION_LIST = 'SUBSCRIPTION_LIST';
+export const GET_SUBSCRIPTION = 'GET_SUBSCRIPTION';
+export const UPDATE_SUBSCRIPTION = 'UPDATE_SUBSCRIPTION';
+export const DELETE_SUBSCRIPTION = 'DELETE_SUBSCRIPTION';
+export const UPDATE_SUBSCRIPTION_STATUS = 'DELETE_SUBSCRIPTION';
+
+/*Admin Transaction */
+export const TRANSACTION_LIST = 'TRANSACTION_LIST';
+export const GET_TRANSACTION = 'GET_TRANSACTION';
+
+
+
+
+
+

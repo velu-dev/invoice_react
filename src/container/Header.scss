@@ -1,0 +1,138 @@
+// Header styles starts here 
+@import '../base.scss';
+
+header {
+    @include mX(320px, 480px) {
+        .logo { 
+            img {
+                width: 200px;
+            }
+        }
+    }
+    #basic-navbar-nav {
+        .navbar-nav {
+            .nav-link {
+                text-transform: $text-uppercase;
+                font-size: 17px;
+                color: $color-black;
+                &:hover {
+                    color: #0086c5;
+                    position: relative;
+                    &:before {
+                        content: '';
+                        height: 5px;
+                        background: #0086c5;
+                        position: absolute;
+                        top: -23px;
+                        left: 0;
+                        width: 100%;
+                    }
+                    &:after {
+                        content: '';
+                        height: 5px;
+                        background: #0086c5;
+                        position: absolute;
+                        bottom: -23px;
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+    .logout_icon {
+        .dropdown-menu {
+            left: unset;
+            right: 10px;
+            top: 125%;
+            width: 176px;
+
+            &.show{
+                &:after, &:before {
+                    right: 12%;
+                    border: solid transparent;
+                    content: " ";
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    pointer-events: none;
+                    z-index: 99;
+                    bottom: 100%;
+                }
+                &:after{
+                    border-color: rgba(136, 183, 213, 0);
+                    border-bottom-color: #fff;
+                    border-width: 7px;
+                    margin-right: 1px;
+                }
+                &:before {
+                    border-color: rgba(194, 225, 245, 0);
+                    border-bottom-color: #f1f1f1;
+                    border-width: 9px;
+                    margin-right: -1px;
+                }
+
+                .dropdown-item:hover, .dropdown-item:focus{
+                    background-color: transparent;
+                }
+            }
+
+            button {
+                background-color: transparent;
+                width: 100%;
+                color: $color-black;
+                border: 0;
+                padding: 0;
+                text-align: left;
+
+                &:focus,
+                &:active,
+                &:hover {
+                    background-color: transparent !important;
+                    color: $color-black !important;
+                    border: 0 !important;
+                    box-shadow: unset !important;
+                }
+
+                svg {
+                    float: right;
+                    margin-top: 3px;
+                }
+            }
+        }
+
+        .dropdown-toggle {
+            position: relative;
+
+            &::after {
+                content: '';
+                background-image: url(../assets/images/home/logout-arrow.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 21px;
+                width: 21px;
+                height: 21px;
+                vertical-align: middle;
+            }
+        }
+    }
+    
+}
+
+@include mI(768px){
+    header {
+        #basic-navbar-nav .nav-link {
+            margin-right: 30px;
+            padding-right: 0;
+            padding-left: 0;
+        } 
+        .btn-custom {
+            &:first-of-type {
+                margin-right: 16px;
+            }
+        }
+    }
+    
+}
+    

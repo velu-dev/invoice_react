@@ -1,0 +1,122 @@
+// Admin Header Styles starts Here
+@import '../../base.scss';
+
+.header-nav {
+    &.bg-light {
+        background-color: $color-white !important;
+        box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.1);
+        min-height: 85px;
+    }
+
+    .admin-nav {
+        align-items: center;
+        position: relative;
+
+        h6 {
+            color: $btn-light-blue;
+            margin-bottom: 0;
+                line-height: normal;
+        }
+        .setting_icon {
+            border-right: 2px solid #e5e5e7;
+        }
+        .nav-link {
+            color: $btn-light-blue;
+            padding: 0;
+            margin: 0 15px;
+            cursor: pointer;
+
+            &:last-child {
+                border-right-color: transparent; 
+            }
+        }
+
+        .dropdown {
+            .dropdown-toggle{
+                background: transparent;
+                border: none;
+                margin: 0 0 0 15px;
+                border-right: 2px solid #e5e5e7;
+                border-radius: 0;
+                box-shadow: none;
+                padding: 0;
+
+                &:empty::after {
+                    margin-right: 15px;
+                }
+
+            }
+
+            .dropdown-menu{
+                right: 10px;
+                left: auto;
+                padding: 22px 24px;
+            }
+
+            .dropdown-menu.show{
+                &:after, &:before {
+                    right: 4%;
+                    border: solid transparent;
+                    content: " ";
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    pointer-events: none;
+                    z-index: 99;
+                    bottom: 100%;
+                }
+                &:after{
+                    border-color: rgba(136, 183, 213, 0);
+                    border-bottom-color: #fff;
+                    border-width: 7px;
+                    margin-right: 1px;
+                }
+                &:before {
+                    border-color: rgba(194, 225, 245, 0);
+                    border-bottom-color: #f1f1f1;
+                    border-width: 9px;
+                    margin-right: -1px;
+                }
+
+                .dropdown-item:hover, .dropdown-item:focus{
+                    background-color: transparent;
+                }
+            }
+
+        }
+    }
+}
+
+.dropdown-toggle {
+    position: relative;
+
+    &::after {
+        content: '';
+        background-image: url(../../assets/images/admin/settings.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 21px;
+        width: 21px;
+        height: 21px;
+        vertical-align: middle;
+    }
+}
+
+#basic-navbar-nav{
+    .admin-setting{
+        // border-right: 2px solid #e5e5e7;
+        margin: 0 20px;
+        position: relative;
+        cursor: pointer;
+
+        &:before{
+            content: "|";
+            position: absolute;
+            right: -24px;
+            color: #e5e5e7;
+            font-size: 25px;
+            top: -7px;
+        }
+    }
+}
+   

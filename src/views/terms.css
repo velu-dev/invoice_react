@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
+.termSec .termSecTitle {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+.termSec .termSecTitle h2 {
+  text-align: center;
+  color: #000000;
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-variant-caps: small-caps; }
+
+.termSec .termSecTitle p {
+  font-size: 14px;
+  margin: 0 auto;
+  width: 70%; }
+
+.termSec .termsDescription p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+  font-size: 14px;
+  color: #000; }
+
+@media screen and (max-width: 767px) {
+  .termSec .termSecTitle {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .termSec .termSecTitle h2 {
+    font-size: 24px; }
+  .termSec .termSecTitle p {
+    width: 100%; } }
+
+.secFour {
+  padding-top: 50px;
+  text-align: center;
+  overflow: hidden; }
+
+.secFour .secFourTitle {
+  color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative; }
+
+.secFour .secFourTitle:before {
+  content: '';
+  background-color: #0086c5;
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  right: -15px;
+  top: 0; }
+
+.secFour .secFourTitle h3 {
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 15px; }
+
+.secFour .secFourTitle p {
+  font-size: 14px; }
+
+.secFour .secFourTitle a {
+  color: #000;
+  background-color: #ffffff;
+  padding: 8px 15px;
+  display: block;
+  margin: 25px auto 0;
+  border-radius: 50px;
+  max-width: 201px; }
+
+.secFour .secFourTitle a:hover {
+  color: #000; }
+
+@media screen and (max-width: 767px) {
+  .secFour .secFourTitle {
+    padding-top: 50px;
+    padding-bottom: 50px; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .secFour .secFourTitle p br {
+    display: none; } }
+
+@media screen and (max-width: 767px) {
+  .secFour {
+    padding-top: 0; } }

@@ -1,0 +1,733 @@
+// Admin Styles starts Here
+@import '../../base.scss';
+
+.admin-sec {
+    .container {
+        @include mX(767px){
+            margin-top: 25px;
+        }
+
+        @include mI(768px){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .admin-wrap {   
+            @include mX(768px, 991px){
+                width: 700px;  
+            }
+
+            @include mI(991px){
+                width: 884px;  
+            }
+
+            .admin-wrap-content { 
+                border-radius: 10px;
+                border-left: 8px solid $btn-light-blue; 
+                overflow: hidden;
+                box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+
+                .admin-right-sec {
+                    background-image: url(../../assets/images/admin/aimg_01.png);
+                    background-position: left center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    vertical-align: middle;
+                    padding-right: 25px;
+                    padding-left: 25px;
+                    justify-content: flex-end;
+                    align-items: center;
+                    display: flex;
+
+                    img {
+                        width: 83%;
+                    }
+                }
+
+                @include mX(767px){
+                    border: 8px solid $btn-light-blue; 
+
+                    .admin-right-sec {
+                        background-image: none;
+                        background-color: $btn-light-blue;
+                        padding: 25px 15px;
+                        justify-content: center;
+                     
+                        img {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+
+            .admin-left-sec {
+                padding-top: 50px;
+                padding-bottom: 50px;
+ 
+                .logoImg {
+                    margin-bottom: 35px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+
+                .admin-sec-title {
+                    color: $color-black;
+                    font-size: 32px;
+                }
+
+                .admin-form-inner {
+                    width: 80%;
+                    margin: 30px auto 0;
+                    text-align: center;
+                    position: relative;
+
+                    &:before {
+                        position: absolute;
+                        width: 8px;
+                        height: 115px;
+                        content: '';
+                        background-color: $btn-light-blue;
+                        left: -45px;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        top: -15px;
+                    }
+
+                    label {
+                        font-family: $font-family;
+                        font-size: 16px;
+                        color: $color-black;
+                        margin-bottom: 0;
+                    }
+
+                    input {
+                        border: none;
+                        border-bottom: 1px solid $auth-border-btm-color;
+                        border-radius: 0;
+                        height: auto;
+                        font-size: 16px;
+                        padding: 13px 35px 13px 5px;
+                        background-repeat: no-repeat;
+                        background-position: 97% center;
+                        font-family: $font-family;
+                        color: $color-black;
+
+                        &:focus {
+                            outline: 0;
+                            box-shadow: none;
+                        }
+
+                        &:-ms-input-placeholder {
+                            color: $color-black;
+                        }
+
+                        &::-ms-input-placeholder {
+                            color: $color-black;
+                        }
+
+                        &::placeholder {
+                            color: $color-black;
+                        }
+                    }
+
+                    .btn-custom {
+                        margin-top: 40px;
+                        max-width: 164px;
+                        margin-bottom: 15px;
+                    }
+
+                    .forget-text {
+                        font-size: 15px;
+                        margin-top: 15px;
+                        font-weight: 400;
+
+                        a {
+                            color: $btn-light-blue;
+                            text-decoration: underline;
+                            font-weight: 600;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: $btn-light-green;
+                            }
+                        }
+                    }
+                }
+
+                @include mX(767px){
+                    padding-top: 25px;
+                    padding-bottom: 25px;
+
+                    .admin-form-inner {
+                        width: 90%;
+
+                        .btn-custom {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+
+            .copyrights {
+                margin-top: 49px;
+
+                p {
+                    color: #3e3935;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.main-content {
+    width: calc(100% - 130px);
+    margin-left: 130px;
+    margin-top: 85px;
+    padding: 25px;
+    min-height: calc(100vh - 85px);
+    background-color: #f3f3f3;
+
+    .admin_page_breadcrumb {
+        border-bottom: 1px solid #d8d8d9;
+        padding-bottom: 30px;
+        padding-top: 5px;
+        margin-bottom: 25px;
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+
+            li {
+                text-transform: uppercase;
+                color: $color-black;
+                font-size: 16px;
+                font-weight: 400;
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+
+                &+li {
+                    padding-left: .5rem;
+
+                    &::before {
+                        content: "/";
+                        display: inline-block;
+                        padding-right: .5rem;
+                        color: $color-black;
+                    }
+                }
+
+                a {
+                    text-transform: uppercase;
+                    color: $btn-light-blue;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    textarea{
+        resize: none;
+    }
+}
+
+.icon-group {
+    position: relative;
+
+    .icon-set {
+        position: absolute;
+        right: 0;
+        top: 32%;
+        width: 35px;
+        background-color: transparent;
+        z-index: 1;
+    }
+}
+
+.was-validated {
+    .form-control{
+        &:invalid {
+            background: none;     
+            border-color: #ced4da;
+
+            &:focus {
+                border-color: #ced4da;
+                box-shadow: none;
+            }
+        } 
+    }
+}
+
+.form-control {
+    &.is-invalid {
+        background: none;    
+        border-color: #ced4da;
+
+        &:focus {
+            border-color: #ced4da;
+            box-shadow: none;
+        }
+    }
+}
+
+form {
+    .MuiFormHelperText-root {
+        width: 100%;
+        margin-top: 8px;
+        font-size: 80%;
+        color: $color-red;
+        
+        &.Mui-error {
+            color: $color-red;
+        }
+    } 
+    .label-required {
+        label {
+            &:after {
+                content: '*';
+                padding-left: 2px;
+                color: $color-red;
+            }
+        }
+    }
+}
+
+.MuiInput-underline{
+    &:before,
+    &:after {
+        border-bottom: 1px solid $auth-border-btm-color !important;
+    }
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../../assets/images/admin/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 97% center;
+    background-size: 15px;
+}
+
+.setting-page-content {
+    .card {
+        @include card;
+
+        .card-header {
+            .btn-change-password {
+                float: right;
+                border-radius: 50px;
+                background-color: $btn-light-blue;
+                font-size: 15px;
+                min-width: 171px;
+                border-color: $btn-light-blue;
+
+                &:focus {
+                    box-shadow: 0 0 0 0.2rem $btn-light-blue;
+                }
+            }
+            h2{
+                font-weight: $font-weight-semibold;
+            }
+        }
+
+        .card-body{
+            &.remove-mandatory{
+                form{
+                    label.form-label{
+                        span {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            form {
+                .content-row {
+                    background-color: $color-white;
+                    padding: 1.25rem;
+                    margin-left: 0;
+                    margin-right: 0;
+                    margin-bottom: 50px;
+
+                    label.form-label {
+                        font-size: 13px;
+                        color: #3d464d;
+
+                        span {
+                            color: #ff0000;
+                        }
+                    }
+                    .form-control {
+                        width: 351px;
+                        font-size: 14px;
+                    }
+                }
+
+                .button-row {
+                    text-align: center;
+
+                    .btn {
+                        vertical-align: middle;
+                    }
+
+                    .btn-custom {
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        font-size: 15px;
+                        min-width: 131px;
+                    }
+                    .btn-link {
+                        color: $color-black;
+                        background-color: #dbdbdb;
+                        line-height: 30px;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                    .btn-back {
+                        color: $color-white;
+                        background-color: $btn-light-green;
+                        line-height: 30px;
+
+                        &:hover {
+                            text-decoration: none;
+                            color: $color-white;
+                            background-color: #218838;
+                            border-color: #1e7e34;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.Custom-modal {
+
+    &.change-password-modal{
+        .modal-dialog{
+            .modal-content{
+                .modal-body{
+                    label{
+                        color: #666666;
+                    }
+                }
+            }
+           
+        }        
+    }
+    .modal-header {
+        font-size: 20px;
+        background-color: #f7f7f7;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom:none;
+    }    
+
+    .modal-dialog {
+        .modal-content {
+            border: 0;
+            background-color: transparent;
+            .modal-body {
+                text-align: center;
+                padding: 25px;
+                background-color: $color-white;
+
+                label {
+                    font-family: "Open Sans", sans-serif;
+                    font-size: 16px;
+                    color: $color-black;
+                    margin-bottom: 0;
+                }
+                p {
+                    font-size: 16px;
+                    color: $color-black;
+                }
+                .Custom-form-inner {
+                    width: 75%;
+                    margin: 0 auto;
+                }
+                
+                &.stripe-body {
+                    p {
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                }
+                .MuiFormHelperText-root.Mui-error {
+                    font-size: 80%;
+                    color: #ff0000;
+                }
+            }
+            .modal-footer {
+                border-top: 0;
+                background-color: #0086c5;
+                justify-content: center;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+
+                .btn-custom {
+                    font-size: 14px;
+                    height: 36px;
+                    min-width: 111px;
+                    margin-left: 8px;
+                    margin-right: 8px;
+                }
+
+                .btn-light {
+                    background-color: $color-white;
+                    border-color: $color-white;
+                    
+                    &:hover {
+                        background-color: #e2e6ea;
+                        border-color: #dae0e5;
+                    }
+                }
+            }
+        }
+    }
+}
+.change-password-modal{
+    .modal-footer{
+        button{
+            text-transform: $text-upper;
+        }
+    }
+}
+@media (min-width: 576px){
+    .change-password-modal{
+        .modal-dialog {
+            max-width: 455px;
+        }
+    }
+}
+
+.buy-plan-modal {
+    .modal-header {
+        font-size: 20px;
+        background-color: #f7f7f7;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }    
+
+    .modal-dialog {
+        .modal-content {
+            border: 0;
+            background-color: transparent;
+            .modal-body {
+                text-align: center;
+                padding: 25px;
+                background-color: $color-white;
+
+                label {
+                    font-family: "Open Sans", sans-serif;
+                    font-size: 16px;
+                    color: $color-black;
+                    margin-bottom: 0;
+                }
+            }
+            .modal-footer {
+                border-top: 0;
+                background-color: #0086c5;
+                justify-content: center;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+
+                .btn-custom {
+                    font-size: 14px;
+                    height: 36px;
+                    min-width: 111px;
+                    margin-left: 8px;
+                    margin-right: 8px;
+                }
+
+                .btn-light {
+                    background-color: $color-white;
+                    border-color: $color-white;
+                    
+                    &:hover {
+                        background-color: #e2e6ea;
+                        border-color: #dae0e5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dropdown-menu {
+    width: 242px;
+    padding: 22px 15px;
+    border: 0;
+    box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.05);
+    top: 150%;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 20px;
+        bottom: 100%;
+        width: 0;
+        height: 0;
+        border-bottom: 10px solid $color-white;
+        border-top: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+    }
+
+    a {
+        color: #131313 !important;
+        padding: 0 !important;
+        text-align: center;
+
+        svg {
+            margin-left: 25px;
+        }
+    }
+}
+
+.dropdown-toggle {        
+        &::after {
+            border: 0;
+        }
+}
+
+
+.thankyou-modal { 
+    .modal-dialog {
+        .modal-content {
+            border: 0;
+            background-color: transparent;
+            .modal-body {
+                text-align: center;
+                padding: 36px 25px;
+                background-color: $color-white;
+                border-top: 9px solid $btn-light-blue;
+                border-radius: 6px;
+
+                h2 {
+                    font-size: 48px;
+                    color: $color-black;
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 14px;
+                    color: $color-black;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+
+.buy-plan-modal {
+    .subscribe-plan {
+        text-align: center;
+        color: $color-black;
+        padding: 6px 15px;
+        box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.05);
+        margin-top: 35px;
+        margin-bottom: 35px;
+        border-top: 6px solid $btn-light-blue;
+        border-bottom: 6px solid $btn-light-blue;
+        border-radius: 10px;
+
+        &.middle-col {
+            border-color: $btn-light-green;
+        }
+
+        @include mX(320px, 575px){
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .plan-title {
+            img {
+                width: 23px;
+            }
+            h3 {
+                font-size: 14px;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 12px;
+                opacity: 0.53;
+                margin-bottom: 12px;
+
+                @include mX(320px, 575px){
+                    font-size: 14px;
+                }
+            }
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 24px;
+            li {
+                border-bottom: 1px solid #e5e5e6;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                font-size: 7px;
+                
+                @include mX(320px, 575px){
+                    font-size: 12px;
+                }
+
+                &:first-child {
+                    border-top: 1px solid #e5e5e6;
+                }
+                svg {
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .hvr-sweep-to-bottom {
+            color: $color-white;
+            padding: 6px 15px;
+            display: block;
+            margin: 0 auto 16px;
+            border-radius: 50px;
+            width: 100px;
+            text-align: center;
+            font-size: 8px;
+        }
+        .green-link {
+            background-color: $btn-light-green;
+            &::before {
+                background-color: $btn-light-blue;
+            }
+        }
+        .blue-link {
+            background-color: $btn-light-blue;
+            &:hover {
+                border-color: $btn-light-green; 
+            }
+            &:focus {
+                box-shadow: none;
+                border-color: $btn-light-green; 
+            }
+        }
+    }
+}
+
+.card-body{
+    &.remove-mandatory{
+        form{
+            label.form-label{
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+}

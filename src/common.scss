@@ -1,0 +1,331 @@
+// Common Styles starts Here
+@import 'base.scss';
+body {
+    font-family: $font-family;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+header {
+    background-color: #f9f9f9;
+}
+
+.btn-light-blue {
+    background-color: $btn-light-blue;
+    color: $color-white;
+}
+
+.btn-light-green {
+    background-color: $btn-light-green;
+    color: $color-white;
+    border-color: $btn-light-green;
+}
+
+.btn-grey{
+    background-color: $color-grey;
+    color: $color-black;
+    border-color: $color-grey;
+}
+.btn-grey:hover{
+    background-color: $failed-status;
+    color: $color-black;
+    border-color: $failed-status;
+}
+.btn-sign-in:hover {
+    color: $color-white;
+    background-color: #006696;
+    border-color: #006696;
+}
+
+.auth-right-block {
+    background-color: $btn-light-blue;
+}
+
+.btn-custom {
+    @include border-radius(30px);
+    height: 46px;
+    min-width: 144px;
+    font-weight: $font-weight-semibold;
+    font-size: 18px;
+}
+
+.auth-modal {
+    .modal-content {
+        border-left: 8px solid $btn-light-blue;
+            
+        @include mX(991px){
+            border-right: 8px solid $btn-light-blue;
+            border-top: 8px solid $btn-light-blue;
+        }
+    }
+    .modal-header {
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        border: none;
+        .close {
+            @include border-radius(30px);
+            color: $color-white;
+            text-shadow: none;
+            opacity: 1;
+            font-weight: $font-weight-normal;
+            background-color: $btn-dark-blue;
+            width: 33px;
+            height: 33px;
+            margin: 0;
+            padding: 0;
+            font-size: $font-base-size;
+        }
+    }
+    .auth-form-inner {
+        text-align: center;
+        
+        label {
+            font-family: $font-family;
+            font-size: 16px;
+            color: $color-black;
+            margin-bottom: 0;
+        }
+
+        input {
+            border: none;
+            border-bottom: 1px solid $auth-border-btm-color;
+            @include border-radius(0);
+            height: auto;
+            padding: 13px 35px 13px 5px;
+            background-repeat: no-repeat;
+            background-position: 97% center;
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+
+        .btn-custom {
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+        .forget-text {
+            font-size: 15px;
+            margin-top: 15px;
+            font-weight: 400;
+            
+            span {
+                color: $btn-light-blue;
+                text-decoration: underline;
+                font-weight: 600;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $btn-light-green;
+                }
+            }
+        }
+        .sub_title {
+            text-align: left;
+            font-size: 18px;
+            color: $color-black;
+        }
+        .form-group {
+            position: relative;
+        }
+
+        @include mX(767px){
+            width: 85%;
+            margin: 30px auto 0;
+        }
+
+        @include mX(768px, 991px) {
+            width: 65%;
+            margin: 30px auto 0;
+        }
+        
+        @include mX(992px, 1199px) {
+            width: 75%;
+            margin: 30px auto 0;
+        }
+    }
+    .auth-right-block {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+    .auth-left-block {
+        padding-top: 65px;
+        padding-bottom: 65px;
+        .logoImg {
+            margin-bottom: 35px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}
+
+
+.page_title {
+    background-color: #f9f9f9;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    h1 {
+        text-align: center;
+        color: $color-black;
+        font-size: 36px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-variant-caps: small-caps;
+    }
+
+    @include mX(767px) {
+        h1 {
+            font-size: 28px;
+        }
+    }
+}
+
+
+.signup_to_join {
+    padding-top: 50px;
+    text-align: center;
+    overflow: hidden;
+    .signup_to_join_title {
+        color: $color-white;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        position: relative;
+        &:before {
+            content: '';
+            background-color: $btn-light-blue;
+            width: 200%;
+            height: 100%;
+            position: absolute;
+            right: -15px;
+            top: 0;
+        }
+        h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 14px;
+        }
+        button {
+            color: $color-black;
+            background-color: $color-white;
+            padding: 8px 15px;
+            display: block;
+            margin: 25px auto 0;
+            border-radius: 50px;
+            min-width: 201px;
+            border: none;
+
+            &:hover {
+                color: $color-white;
+            }
+        }
+        @include mX(767px) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        @include mX(768px,
+        991px) {
+            p {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+    @include mX(767px) {
+        padding-top: 0;
+    }
+}
+
+@include mX(992px, 1199px) { 
+    .modal-dialog {
+        max-width: 700px;
+    }
+}
+
+@include mI(1200px) {
+    .container {
+        max-width: 1180px;
+    }
+    .custom-modal {
+        .modal-dialog {
+            max-width: $desktop-modal-width;
+        }
+    }
+    .auth-modal {
+        .auth-form-inner {
+            width: 65%;
+            margin: 30px auto 0;
+        }
+    }
+}
+
+.invalid-feedback {
+    text-align: left;
+    color: $color-red;
+}
+
+
+form {
+    .MuiFormHelperText-root {
+        width: 100%;
+        margin-top: 8px;
+        font-size: 80%;
+        color: $color-red;
+    } 
+    .label-required {
+        label {
+            &:after {
+                content: '*';
+                padding-left: 2px;
+                color: $color-red;
+            }
+        }
+    }
+
+    .form-group{
+        input{
+            &.form-control{
+                box-shadow: 1px 4px 4px #f5f5f5; 
+                &:disabled{
+                    cursor: not-allowed;
+                }
+            }
+        }
+        textarea{
+            &.form-control{
+                box-shadow: 1px 4px 4px #f5f5f5; 
+                &:disabled{
+                    cursor: not-allowed;
+                }
+            }
+        }       
+    }
+}
+
+.MuiInput-underline:before,
+.MuiInput-underline:after {
+    border-bottom: 1px solid $auth-border-btm-color !important;
+}
+
+.icon-group {
+    position: relative;
+
+    .icon-set {
+        position: absolute;
+        right: 0;
+        top: 32%;
+        width: 31px;
+        background-color: $color-white;
+        z-index: 1;
+    }
+}
+

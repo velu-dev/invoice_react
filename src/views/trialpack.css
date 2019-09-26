@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
+/* Bootstrap 4 Class .card css */
+/* ON/OFF toggle*/
+/* Sweep To Bottom */
+/* Sweep To Right */
+.user_page_breadcrumb {
+  background-color: #f9f9f9;
+  padding: 15px 0; }
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .user_page_breadcrumb {
+    padding: 15px; } }
+
+.user_page_breadcrumb ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0; }
+
+.user_page_breadcrumb ul li {
+  font-variant-caps: small-caps;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; }
+
+.user_page_breadcrumb ul li + li {
+  padding-left: .5rem; }
+
+.user_page_breadcrumb ul li + li::before {
+  content: "/";
+  display: inline-block;
+  padding-right: .5rem;
+  color: #000000; }
+
+.user_page_breadcrumb ul li a {
+  font-variant-caps: small-caps;
+  color: #000000;
+  font-size: 16px; }
+
+.user-settings-page .card {
+  border: 0;
+  border-top: 5px solid #0086c5;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.05);
+  margin-top: 30px; }
+
+.user-settings-page .card .card-header {
+  background-color: #ffffff; }
+
+.user-settings-page .card .card-header .btn-change-password {
+  float: right;
+  border-radius: 50px;
+  background-color: #0086c5;
+  font-size: 15px;
+  min-width: 171px;
+  border-color: #0086c5;
+  margin-top: 10px; }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .user-settings-page .card .card-header .btn-change-password {
+    font-size: 14px;
+    min-width: unset; } }
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .user-settings-page .card .card-header .btn-change-password {
+    margin-top: 5px; } }
+
+.user-settings-page .card .card-header .btn-change-password:hover {
+  background-color: #06608b;
+  border-color: #06608b;
+  box-shadow: 0 0 0 0.05rem #06608b; }
+
+.user-settings-page .card .card-header .btn-change-password:focus {
+  box-shadow: 0 0 0 0.05rem #06608b; }
+
+.user-settings-page .card .card-header h2 {
+  font-size: 22px;
+  color: #0086c5;
+  margin: 10px 0; }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .user-settings-page .card .card-header h2 {
+    font-size: 20px;
+    margin: 5px 0; } }
+
+.user-settings-page .card .card-header p {
+  color: #292929;
+  font-size: 14px; }
+
+.user-settings-page .card .card-body .stripe-description {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+@media screen and (max-width: 767px) {
+  .user-settings-page .card .card-body .stripe-description {
+    padding-top: 25px;
+    padding-bottom: 25px; } }
+
+.user-settings-page .card .card-body .stripe-description h3 {
+  font-size: 18px;
+  color: #3d464d;
+  margin-bottom: 25px;
+  line-height: 30px; }
+
+@media screen and (max-width: 991px) {
+  .user-settings-page .card .card-body .stripe-description h3 br {
+    display: none; } }
+
+.user-settings-page .card .card-body .stripe-description .button-row {
+  text-align: center; }
+
+.user-settings-page .card .card-body .stripe-description .button-row .btn {
+  vertical-align: middle; }
+
+.user-settings-page .card .card-body .stripe-description .button-row .btn-custom {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  min-width: 135px;
+  height: 36px;
+  margin-bottom: 10px;
+  padding: 6px 25px;
+  display: inline-block; }
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .user-settings-page .card .card-body .stripe-description .button-row .btn-custom {
+    width: 75%; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .user-settings-page .card .card-body .stripe-description .button-row .btn-custom {
+    margin-left: 5px;
+    margin-right: 5px;
+    min-width: 85px;
+    font-size: 14px; } }
+
+.user-settings-page .card .card-body .stripe-description .button-row .btn-light-blue:hover {
+  color: #ffffff;
+  background-color: #06608b; }
+
+.user-settings-page .card .card-body .stripe-description .button-row .btn-link {
+  color: #000000;
+  background-color: #dbdbdb; }
+
+.user-settings-page .card .card-body .stripe-description .button-row .btn-link:hover {
+  text-decoration: none; }
+
+.user-settings-page .card .card-body .stripe-description .button-row .btn-back {
+  color: #ffffff;
+  background-color: #76be3e;
+  line-height: 30px; }
+
+.user-settings-page .card .card-body .stripe-description .button-row .btn-back:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #218838;
+  border-color: #1e7e34; }
+
+.user-settings-page .card .card-body form .content-row {
+  background-color: #ffffff;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 25px; }
+
+.user-settings-page .card .card-body form .content-row .form-group {
+  width: 100%; }
+
+.user-settings-page .card .card-body form .content-row label.form-label {
+  font-size: 13px;
+  color: #3d464d; }
+
+.user-settings-page .card .card-body form .content-row label.form-label span {
+  color: #ff0000; }
+
+.user-settings-page .card .card-body form .content-row .form-control {
+  font-size: 14px; }
+
+@media screen and (min-width: 1199px) {
+  .user-settings-page .card .card-body form .content-row .form-control {
+    width: 351px; } }
+
+@media screen and (max-width: 767px) {
+  .user-settings-page .card .card-body form .content-row .form-control {
+    width: 100%; } }
+
+.user-settings-page .card .card-body form .content-row .form-control.redirect_url_input {
+  width: 100%; }
+
+.user-settings-page .card .card-body form .button-row {
+  text-align: center; }
+
+.user-settings-page .card .card-body form .button-row .btn {
+  vertical-align: middle; }
+
+.user-settings-page .card .card-body form .button-row .btn-custom {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  min-width: 135px;
+  height: 36px;
+  margin-bottom: 10px;
+  padding: 6px 25px; }
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .user-settings-page .card .card-body form .button-row .btn-custom {
+    width: 75%; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .user-settings-page .card .card-body form .button-row .btn-custom {
+    margin-left: 5px;
+    margin-right: 5px;
+    min-width: 85px;
+    font-size: 14px; } }
+
+.user-settings-page .card .card-body form .button-row .btn-light-blue:hover {
+  color: #ffffff;
+  background-color: #06608b; }
+
+.user-settings-page .card .card-body form .button-row .btn-link {
+  color: #000000;
+  background-color: #dbdbdb; }
+
+.user-settings-page .card .card-body form .button-row .btn-link:hover {
+  text-decoration: none; }
+
+.user-settings-page .card .card-body form .button-row .btn-back {
+  color: #ffffff;
+  background-color: #76be3e;
+  line-height: 30px; }
+
+.user-settings-page .card .card-body form .button-row .btn-back:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #218838;
+  border-color: #1e7e34; }
+
+.user-settings-page .card .card-body form .add-card-form {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 20px; }
+
+.user-settings-page .card .card-body form .add-card-form:first-child {
+  border-top: 0; }
+
+.user-settings-page .card .card-body form .add-card-form .content-row .col-md-1 {
+  width: auto;
+  max-width: fit-content;
+  margin-bottom: 0; }
+
+.user-settings-page .card .card-body form .add-card-form .content-row .col-md-1 input {
+  display: block; }
+
+@media screen and (min-width: 1199px) {
+  .user-settings-page .card .card-body form .add-card-form .content-row .col-md-5 {
+    max-width: calc(41.66667% + 38px);
+    flex: 0 0 calc(41.66667% + 38px); } }
+
+.user-settings-page .card .card-body form .add-card-form .content-row .card_number_input {
+  width: 80%; }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .user-settings-page .card .card-body form .add-card-form .content-row .card_number_input {
+    width: 76%; } }
+
+.user-settings-page .card .card-body form .add-card-form .content-row .expiry_date_input {
+  width: 81.5%; }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .user-settings-page .card .card-body form .add-card-form .content-row .expiry_date_input {
+    width: 65%; } }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .user-settings-page .card .card-body form .add-card-form .content-row .expiry_date_input {
+    width: 79%; } }
+
+@media screen and (max-width: 767px) {
+  .user-settings-page .card .card-body form .add-card-form .content-row .card_number_input {
+    width: calc(100% - 50px); }
+  .user-settings-page .card .card-body form .add-card-form .content-row .expiry_date_input {
+    width: calc(100% - 50px); } }
+
+.user-settings-page .card .card-body form .add-card-form .content-row .icon-group {
+  margin-bottom: 0; }
+
+.user-settings-page .card .card-body form .add-card-form .content-row .icon-group .icon-set {
+  right: 8%;
+  top: 50%; }
+
+@media screen and (max-width: 767px) {
+  .user-settings-page .card .card-body form .add-card-form .content-row .icon-group .icon-set {
+    right: 3%; } }
+
+.user-settings-page .card .card-body form .add-card-form .content-row .icon-group .icon-set.trash {
+  text-align: center;
+  background-color: #e9ecef;
+  border-radius: 50%;
+  height: 32px;
+  line-height: 30px;
+  width: 32px; }
+
+.user-settings-page .card .card-body.redirect-url-form {
+  padding: 25px 15px; }
+
+.user-settings-page .card .card-body.redirect-url-form form .content-row {
+  margin-bottom: 5px; }
+
+.user-settings-page .card .card-body.redirect-url-form form .content-row .form-control {
+  width: 100%; }
+
+.user-settings-page .card .card-body.redirect-url-form form .button-row .btn-custom {
+  margin-left: 10px;
+  margin-right: 0;
+  min-width: 100px; }
+
+.user-settings-page .card .card-body.redirect-url-form form .button-row .btn-custom:first-child {
+  margin-left: 0; }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .user-settings-page .card .card-body.redirect-url-form form .button-row .btn-custom {
+    min-width: 80px;
+    margin-left: 5px;
+    padding: 6px 20px; } }
+
+.user-settings-page .card .card-body .trial-plan {
+  text-align: center;
+  color: #000000;
+  padding: 25px 0; }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .user-settings-page .card .card-body .trial-plan {
+    padding: 20px 0px; } }
+
+.user-settings-page .card .card-body .trial-plan .plan-title p {
+  font-size: 14px;
+  color: #000000; }
+
+@media screen and (max-width: 1199px) {
+  .user-settings-page .card .card-body .trial-plan .plan-title p br {
+    display: none; } }
+
+.user-settings-page .card .card-body .trial-plan .count_down {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center; }
+
+.user-settings-page .card .card-body .trial-plan .count_down .days_count span {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #0086c5;
+  color: #ffffff;
+  font-size: 60px;
+  line-height: 66px;
+  padding: 0px 15px;
+  border-radius: 10px;
+  margin: 0 2px;
+  font-weight: 600; }
+
+.user-settings-page .card .card-body .trial-plan .count_down p {
+  color: #292929;
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-top: 5px; }
+
+.user-settings-page .card .card-body .hvr-sweep-to-bottom {
+  color: #ffffff;
+  padding: 5px 15px;
+  display: block;
+  margin: 13px auto 0;
+  border-radius: 50px;
+  width: 201px;
+  text-align: center; }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .user-settings-page .card .card-body .hvr-sweep-to-bottom {
+    width: 175px; } }
+
+.user-settings-page .card .card-body .green-link {
+  background-color: #76be3e;
+  border-color: #76be3e; }
+
+.user-settings-page .card .card-body .green-link:hover {
+  border-color: #0086c5; }
+
+.user-settings-page .card .card-body .green-link::before {
+  background-color: #0086c5;
+  border-color: #0086c5; }
+
+.user-settings-page .card .card-body .green-link:focus {
+  box-shadow: none;
+  border-color: #0086c5; }
+
+.user-settings-page .card .card-body .blue-link {
+  background-color: #0086c5; }
+
+.user-settings-page .card .card-body .blue-link:hover {
+  border-color: #76be3e; }
+
+.user-settings-page .card .card-body .blue-link::before {
+  background-color: #76be3e;
+  border-color: #76be3e; }
+
+.user-settings-page .card .card-body .blue-link:focus {
+  box-shadow: none;
+  border-color: #76be3e; }

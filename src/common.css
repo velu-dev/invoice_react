@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
+/* Bootstrap 4 Class .card css */
+/* ON/OFF toggle*/
+/* Sweep To Bottom */
+/* Sweep To Right */
+body {
+  font-family: "Open Sans", sans-serif; }
+
+a:hover {
+  text-decoration: none; }
+
+header {
+  background-color: #f9f9f9; }
+
+.btn-light-blue {
+  background-color: #0086c5;
+  color: #ffffff; }
+
+.btn-light-green {
+  background-color: #76be3e;
+  color: #ffffff;
+  border-color: #76be3e; }
+
+.btn-grey {
+  background-color: #dbdbdb;
+  color: #000000;
+  border-color: #dbdbdb; }
+
+.btn-grey:hover {
+  background-color: #e6e6e6;
+  color: #000000;
+  border-color: #e6e6e6; }
+
+.btn-sign-in:hover {
+  color: #ffffff;
+  background-color: #006696;
+  border-color: #006696; }
+
+.auth-right-block {
+  background-color: #0086c5; }
+
+.btn-custom {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+  height: 46px;
+  min-width: 144px;
+  font-weight: 600;
+  font-size: 18px; }
+
+.auth-modal .modal-content {
+  border-left: 8px solid #0086c5; }
+
+@media screen and (max-width: 991px) {
+  .auth-modal .modal-content {
+    border-right: 8px solid #0086c5;
+    border-top: 8px solid #0086c5; } }
+
+.auth-modal .modal-header {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  border: none; }
+
+.auth-modal .modal-header .close {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+  color: #ffffff;
+  text-shadow: none;
+  opacity: 1;
+  font-weight: 400;
+  background-color: #06608b;
+  width: 33px;
+  height: 33px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px; }
+
+.auth-modal .auth-form-inner {
+  text-align: center; }
+
+.auth-modal .auth-form-inner label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 0; }
+
+.auth-modal .auth-form-inner input {
+  border: none;
+  border-bottom: 1px solid #989898;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  height: auto;
+  padding: 13px 35px 13px 5px;
+  background-repeat: no-repeat;
+  background-position: 97% center; }
+
+.auth-modal .auth-form-inner input:focus {
+  outline: 0;
+  box-shadow: none; }
+
+.auth-modal .auth-form-inner .btn-custom {
+  margin-top: 40px;
+  margin-bottom: 15px; }
+
+.auth-modal .auth-form-inner .forget-text {
+  font-size: 15px;
+  margin-top: 15px;
+  font-weight: 400; }
+
+.auth-modal .auth-form-inner .forget-text span {
+  color: #0086c5;
+  text-decoration: underline;
+  font-weight: 600; }
+
+.auth-modal .auth-form-inner .forget-text span:hover {
+  cursor: pointer;
+  color: #76be3e; }
+
+.auth-modal .auth-form-inner .sub_title {
+  text-align: left;
+  font-size: 18px;
+  color: #000000; }
+
+.auth-modal .auth-form-inner .form-group {
+  position: relative; }
+
+@media screen and (max-width: 767px) {
+  .auth-modal .auth-form-inner {
+    width: 85%;
+    margin: 30px auto 0; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .auth-modal .auth-form-inner {
+    width: 65%;
+    margin: 30px auto 0; } }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .auth-modal .auth-form-inner {
+    width: 75%;
+    margin: 30px auto 0; } }
+
+.auth-modal .auth-right-block {
+  padding-top: 65px;
+  padding-bottom: 65px; }
+
+.auth-modal .auth-left-block {
+  padding-top: 65px;
+  padding-bottom: 65px; }
+
+.auth-modal .auth-left-block .logoImg {
+  margin-bottom: 35px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.page_title {
+  background-color: #f9f9f9;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.page_title h1 {
+  text-align: center;
+  color: #000000;
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-variant-caps: small-caps; }
+
+@media screen and (max-width: 767px) {
+  .page_title h1 {
+    font-size: 28px; } }
+
+.signup_to_join {
+  padding-top: 50px;
+  text-align: center;
+  overflow: hidden; }
+
+.signup_to_join .signup_to_join_title {
+  color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative; }
+
+.signup_to_join .signup_to_join_title:before {
+  content: '';
+  background-color: #0086c5;
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  right: -15px;
+  top: 0; }
+
+.signup_to_join .signup_to_join_title h2 {
+  font-size: 42px;
+  margin-bottom: 15px; }
+
+.signup_to_join .signup_to_join_title p {
+  font-size: 14px; }
+
+.signup_to_join .signup_to_join_title button {
+  color: #000000;
+  background-color: #ffffff;
+  padding: 8px 15px;
+  display: block;
+  margin: 25px auto 0;
+  border-radius: 50px;
+  min-width: 201px;
+  border: none; }
+
+.signup_to_join .signup_to_join_title button:hover {
+  color: #ffffff; }
+
+@media screen and (max-width: 767px) {
+  .signup_to_join .signup_to_join_title {
+    padding-top: 50px;
+    padding-bottom: 50px; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .signup_to_join .signup_to_join_title p br {
+    display: none; } }
+
+@media screen and (max-width: 767px) {
+  .signup_to_join {
+    padding-top: 0; } }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .modal-dialog {
+    max-width: 700px; } }
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1180px; }
+  .custom-modal .modal-dialog {
+    max-width: 1100px; }
+  .auth-modal .auth-form-inner {
+    width: 65%;
+    margin: 30px auto 0; } }
+
+.invalid-feedback {
+  text-align: left;
+  color: #ff0000; }
+
+form .MuiFormHelperText-root {
+  width: 100%;
+  margin-top: 8px;
+  font-size: 80%;
+  color: #ff0000; }
+
+form .label-required label:after {
+  content: '*';
+  padding-left: 2px;
+  color: #ff0000; }
+
+form .form-group input.form-control {
+  box-shadow: 1px 4px 4px #f5f5f5; }
+
+form .form-group input.form-control:disabled {
+  cursor: not-allowed; }
+
+form .form-group textarea.form-control {
+  box-shadow: 1px 4px 4px #f5f5f5; }
+
+form .form-group textarea.form-control:disabled {
+  cursor: not-allowed; }
+
+.MuiInput-underline:before,
+.MuiInput-underline:after {
+  border-bottom: 1px solid #989898 !important; }
+
+.icon-group {
+  position: relative; }
+
+.icon-group .icon-set {
+  position: absolute;
+  right: 0;
+  top: 32%;
+  width: 31px;
+  background-color: #ffffff;
+  z-index: 1; }

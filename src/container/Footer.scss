@@ -1,0 +1,97 @@
+// Footer Styles starts Here
+@import '../base.scss';
+
+footer {
+	.footContent {
+		margin-top: 50px;
+		border-top: 2px solid #eeeeef;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	
+	.footLinks {
+		list-style: none;
+		margin-top: 18px;
+		margin-bottom: 18px;
+		padding-left: 0;
+		li {
+			display: inline-block;
+
+			&:first-child a {
+				padding-left: 0;
+			}
+
+			&:last-child a {
+				padding-right: 0;
+			}
+
+			a {
+	    		font-size: 15px;
+    			text-transform: uppercase;
+    			padding: 10px 8px;
+    			color: #000;
+			}
+		}
+	}
+
+	@include mX(767px) {
+		.footLogo {
+		    text-align: center;
+		    padding-top: 10px;
+		}
+
+		.footLinks { 
+			margin-bottom: 0;
+
+			li {
+			    display: block;
+			    text-align: center;
+			    padding: 8px 0;
+			    border-bottom: 1px solid #f7f7f7;
+
+			    &:last-child {
+			    	border-bottom: 0;
+			    }
+
+			    a {
+			    	font-size: 14px;
+			    }
+		    }
+		}
+	}
+
+	@include mX(768px, 991px) {
+		.footLogo {
+			img {
+	    		width: 150px;
+			}
+		}
+
+		.footLinks { 
+		    margin-top: 8px;
+    		margin-bottom: 8px;
+
+			li {
+			    a {
+			    	padding: 10px 5px;
+			    	font-size: 14px;
+			    	text-transform: capitalize;
+			    }
+		    }
+	    }
+	}
+}
+
+.copyright {
+	background-color: #e6e6e6;
+	padding: 7px 0;
+	p {
+		margin-bottom: 0;
+		text-transform: uppercase;
+		color: #000000;
+		font-size: 13px;
+		text-align: center;
+	}
+}
+
+   

@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
+/* Bootstrap 4 Class .card css */
+/* ON/OFF toggle*/
+/* Sweep To Bottom */
+/* Sweep To Right */
+.transaction-list {
+  position: relative; }
+
+.transaction-list .status-label {
+  display: inline-block;
+  float: left;
+  padding: 9px 11px 0px 0;
+  font-size: 15px; }
+
+.transaction-list input[name="search"] {
+  border-radius: 50px;
+  border: 0;
+  padding: 10px 40px 10px 15px;
+  background-image: url(../../../assets/images/admin/search.png);
+  background-repeat: no-repeat;
+  background-position: 93% center;
+  background-size: 18px;
+  margin-bottom: 15px;
+  float: right;
+  width: 200px;
+  font-style: italic;
+  color: #76be3e;
+  font-size: 14px;
+  box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.05); }
+
+.transaction-list input[name="search"]::-webkit-input-placeholder {
+  /* Edge */
+  color: #76be3e; }
+
+.transaction-list input[name="search"]:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #76be3e; }
+
+.transaction-list input[name="search"]::placeholder {
+  color: #76be3e; }
+
+.transaction-list select {
+  border-radius: 50px;
+  border: 0;
+  padding: 10px 40px 10px 15px;
+  background-position: 90% center;
+  margin-bottom: 15px;
+  float: left;
+  width: 161px;
+  color: #76be3e;
+  font-size: 14px;
+  background-image: url(../../../assets/images/admin/drop-down-arrow.svg) !important;
+  background-repeat: no-repeat !important;
+  background-position: 93% center !important;
+  background-size: 10px !important;
+  box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.05); }
+
+.transaction-list .form-search {
+  position: absolute;
+  right: 210px;
+  padding: 8px; }
+
+.transaction-list .ReactTable {
+  border: 0;
+  width: 100%; }
+
+.transaction-list .ReactTable .rt-thead {
+  background-color: #ffffff;
+  border-bottom: solid 10px #f8f8f8; }
+
+.transaction-list .ReactTable .rt-thead.-header {
+  box-shadow: none; }
+
+.transaction-list .ReactTable .rt-thead .rt-tr {
+  text-align: left; }
+
+.transaction-list .ReactTable .rt-thead .rt-tr .rt-th {
+  color: #0086c5;
+  font-size: 14px;
+  padding: 20px 15px;
+  box-shadow: none;
+  border: 0;
+  font-weight: 600; }
+
+.transaction-list .ReactTable .rt-thead .rt-tr .rt-td {
+  color: #0086c5;
+  font-size: 14px;
+  padding: 20px 15px;
+  box-shadow: none;
+  border: 0;
+  font-weight: 600; }
+
+.transaction-list .ReactTable .rt-tbody .rt-tr-group {
+  border-bottom: solid 10px #f8f8f8; }
+
+.transaction-list .ReactTable .rt-tbody .rt-tr-group:last-child {
+  border-bottom: 0; }
+
+.transaction-list .ReactTable.-highlight .rt-tbody .rt-tr:not(.-padRow):hover {
+  background-color: #ffffff; }
+
+.transaction-list .ReactTable.-highlight .rt-tbody .rt-tr:hover .rt-td {
+  color: #0086c5; }
+
+.transaction-list .ReactTable.-highlight .rt-tbody .rt-tr:hover .rt-td svg path {
+  fill: #0086c5 !important; }
+
+.transaction-list .ReactTable .rt-td {
+  font-size: 15px;
+  color: #000000;
+  padding: 10px 15px; }
+
+.transaction-list .ReactTable .rt-td .status_paid {
+  background-color: #76be3e;
+  border-radius: 50px;
+  color: #ffffff;
+  text-align: center;
+  padding: 4.5px 10px;
+  min-width: 119px;
+  display: inline-block; }
+
+.transaction-list .ReactTable .rt-td .status_failed {
+  background-color: #e6e6e6;
+  border-radius: 50px;
+  color: #000000;
+  text-align: center;
+  padding: 4.5px 10px;
+  min-width: 119px;
+  display: inline-block; }
+
+.transaction-list .ReactTable .rt-td .card_icon {
+  display: block; }
+
+.transaction-list .ReactTable .rt-tr {
+  align-items: center;
+  background-color: #ffffff; }
+
+.transaction-list .ReactTable .rt-tr .rt-th.-cursor-pointer {
+  background-image: url(../../../assets/images/admin/sort.png);
+  background-repeat: no-repeat;
+  background-position: 93% center; }
+
+.transaction-list .ReactTable .rt-tr .rt-th.-cursor-pointer.-sort-asc {
+  background-image: url(../../../assets/images/admin/sort_asc.png);
+  background-repeat: no-repeat;
+  background-position: 93% center; }
+
+.transaction-list .ReactTable .rt-tr .rt-th.-cursor-pointer.-sort-desc {
+  background-image: url(../../../assets/images/admin/sort_desc.png);
+  background-repeat: no-repeat;
+  background-position: 93% center; }
+
+.transaction-list .ReactTable.-striped .rt-tr.-odd {
+  background-color: #ffffff; }
+
+.transaction-list .ReactTable .rt-tfoot {
+  display: none; }
+
+.transaction-list .ReactTable .-pagination {
+  border-top: 0;
+  padding: 0;
+  border-radius: 27px;
+  margin: 25px auto;
+  width: 60%; }
+
+.transaction-list .ReactTable .-pagination .-btn[disabled] {
+  opacity: 1;
+  cursor: no-drop; }
+
+.transaction-list .ReactTable .-pagination .-center {
+  background-color: #ffffff; }
+
+.transaction-list .ReactTable .-pagination .-center .select-wrap select {
+  margin-bottom: 0;
+  box-shadow: none;
+  color: #000000; }
+
+.transaction-list .ReactTable .-pagination .-next {
+  flex: none; }
+
+.transaction-list .ReactTable .-pagination .-next .-btn {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 3px 16px 3px 10px;
+  float: left; }
+
+.transaction-list .ReactTable .-pagination .-previous {
+  flex: none; }
+
+.transaction-list .ReactTable .-pagination .-previous .-btn {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 3px 10px 3px 16px;
+  float: right; }
+
+.transaction-list .ReactTable .-pagination .-btn {
+  width: auto;
+  background-color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000000; }
+
+.transaction-list .ReactTable .-pagination .-btn:not([disabled]):hover {
+  background-color: #0086c5;
+  color: #ffffff; }
+
+.transaction-list .ReactTable .datatable-action span {
+  padding: 5px 7px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.transaction-list .ReactTable .datatable-action span:hover {
+  cursor: pointer; }
+
+.transaction-list .ReactTable .datatable-action a {
+  padding: 5px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.transaction-list-page-content .card {
+  background-color: transparent;
+  border: 0; }
+
+.transaction-list-page-content .card .card-header {
+  background-color: #ffffff;
+  padding: 25px;
+  border-bottom: 1px solid #e5e5e5; }
+
+.transaction-list-page-content .card .card-header h2 {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #0086c5;
+  text-transform: capitalize; }
+
+.transaction-list-page-content .card .card-header p {
+  color: #292929;
+  font-size: 14px;
+  margin-bottom: 0; }
+
+.transaction-list-page-content .card .card-body {
+  padding: 0; }
+
+.transaction-list-page-content .card .card-body form .content-row {
+  background-color: #ffffff;
+  padding: 1.25rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 50px; }
+
+.transaction-list-page-content .card .card-body form .content-row .form-label {
+  font-size: 13px;
+  color: #3d464d;
+  display: block; }
+
+.transaction-list-page-content .card .card-body form .content-row .form-label span {
+  color: #ff0000; }
+
+.transaction-list-page-content .card .card-body form .content-row .price-group {
+  position: relative; }
+
+.transaction-list-page-content .card .card-body form .content-row .price-group .icon-set {
+  position: absolute;
+  left: 0;
+  width: 42px;
+  height: 34px;
+  line-height: 34px;
+  border: 1px solid #dedede;
+  background-color: #f4f2f2;
+  border-radius: 3px;
+  z-index: 1;
+  text-align: center; }
+
+.transaction-list-page-content .card .card-body form .content-row .price-group .form-control {
+  padding: 5px 5px 5px 50px; }
+
+.transaction-list-page-content .card .card-body form .content-row .form-control {
+  width: 351px;
+  font-size: 14px; }
+
+.transaction-list-page-content .card .card-body form .content-row .benefit-inputs .form-control {
+  display: inline-block;
+  vertical-align: middle; }
+
+.transaction-list-page-content .card .card-body form .content-row .benefit-inputs .benefit-input-wrap {
+  margin-bottom: 1rem; }
+
+.transaction-list-page-content .card .card-body form .content-row .benefit-inputs .benefit-input-wrap span {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 5px; }
+
+.transaction-list-page-content .card .card-body form .content-row textarea.form-control {
+  width: 100%; }
+
+.transaction-list-page-content .card .card-body form .button-row {
+  text-align: center; }
+
+.transaction-list-page-content .card .card-body form .button-row .btn {
+  vertical-align: middle; }
+
+.transaction-list-page-content .card .card-body form .button-row .btn-custom {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  min-width: 131px; }
+
+.transaction-list-page-content .card .card-body form .button-row .btn-link {
+  color: #000000;
+  background-color: #dbdbdb;
+  line-height: 30px; }
+
+.transaction-list-page-content .card .card-body form .button-row .btn-link:hover {
+  text-decoration: none; }
+
+.transaction-list-page-content .card .card-body form .button-row .btn-back {
+  color: #ffffff;
+  background-color: #76be3e;
+  line-height: 30px; }
+
+.transaction-list-page-content .card .card-body form .button-row .btn-back:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #218838;
+  border-color: #218838; }

@@ -1,0 +1,107 @@
+// Terms Page Styles starts Here
+@import '../base.scss';
+
+.termSec {
+    .termSecTitle {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+        h2 {
+            text-align: center;
+            color: $color-black000;
+            font-size: 36px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-variant-caps: small-caps;
+        }
+        p {
+            font-size: 14px;
+            margin: 0 auto;
+            width: 70%;
+        }
+    }
+
+    .termsDescription {
+        p {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            text-align: justify;
+            font-size: 14px;
+            color: $color-black;
+        }
+    }
+
+    @include mX(767px) {   
+        .termSecTitle {
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            h2 {
+                font-size: 24px;
+            }
+            
+            p {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+.secFour {
+    padding-top: 50px;
+    text-align: center;
+    overflow: hidden;
+    .secFourTitle {
+        color: $color-white;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        position: relative;
+        &:before {
+            content: '';
+            background-color: #0086c5;
+            width: 200%;
+            height: 100%;
+            position: absolute;
+            right: -15px;
+            top: 0;
+        }
+        h3 {
+            font-size: 28px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 14px;
+        }
+        a {
+            color: $color-black;
+            background-color: $color-white;
+            padding: 8px 15px;
+            display: block;
+            margin: 25px auto 0;
+            border-radius: 50px;
+            max-width: 201px;
+            &:hover {
+                color: $color-black;
+            }
+        }
+        @include mX(767px) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        @include mX(768px,
+        991px) {
+            p {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+    @include mX(767px) {
+        padding-top: 0;
+    }
+}

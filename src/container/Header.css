@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
+/* Bootstrap 4 Class .card css */
+/* ON/OFF toggle*/
+/* Sweep To Bottom */
+/* Sweep To Right */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  header .logo img {
+    width: 200px; } }
+
+header #basic-navbar-nav .navbar-nav .nav-link {
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #000000; }
+
+header #basic-navbar-nav .navbar-nav .nav-link:hover {
+  color: #0086c5;
+  position: relative; }
+
+header #basic-navbar-nav .navbar-nav .nav-link:hover:before {
+  content: '';
+  height: 5px;
+  background: #0086c5;
+  position: absolute;
+  top: -23px;
+  left: 0;
+  width: 100%; }
+
+header #basic-navbar-nav .navbar-nav .nav-link:hover:after {
+  content: '';
+  height: 5px;
+  background: #0086c5;
+  position: absolute;
+  bottom: -23px;
+  width: 100%;
+  left: 0; }
+
+header .logout_icon .dropdown-menu {
+  left: unset;
+  right: 10px;
+  top: 125%;
+  width: 176px; }
+
+header .logout_icon .dropdown-menu.show:after, header .logout_icon .dropdown-menu.show:before {
+  right: 12%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  z-index: 99;
+  bottom: 100%; }
+
+header .logout_icon .dropdown-menu.show:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: #fff;
+  border-width: 7px;
+  margin-right: 1px; }
+
+header .logout_icon .dropdown-menu.show:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-bottom-color: #f1f1f1;
+  border-width: 9px;
+  margin-right: -1px; }
+
+header .logout_icon .dropdown-menu.show .dropdown-item:hover, header .logout_icon .dropdown-menu.show .dropdown-item:focus {
+  background-color: transparent; }
+
+header .logout_icon .dropdown-menu button {
+  background-color: transparent;
+  width: 100%;
+  color: #000000;
+  border: 0;
+  padding: 0;
+  text-align: left; }
+
+header .logout_icon .dropdown-menu button:focus, header .logout_icon .dropdown-menu button:active, header .logout_icon .dropdown-menu button:hover {
+  background-color: transparent !important;
+  color: #000000 !important;
+  border: 0 !important;
+  box-shadow: unset !important; }
+
+header .logout_icon .dropdown-menu button svg {
+  float: right;
+  margin-top: 3px; }
+
+header .logout_icon .dropdown-toggle {
+  position: relative; }
+
+header .logout_icon .dropdown-toggle::after {
+  content: '';
+  background-image: url(../assets/images/home/logout-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 21px;
+  width: 21px;
+  height: 21px;
+  vertical-align: middle; }
+
+@media screen and (min-width: 768px) {
+  header #basic-navbar-nav .nav-link {
+    margin-right: 30px;
+    padding-right: 0;
+    padding-left: 0; }
+  header .btn-custom:first-of-type {
+    margin-right: 16px; } }

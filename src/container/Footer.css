@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
+/* Bootstrap 4 Class .card css */
+/* ON/OFF toggle*/
+/* Sweep To Bottom */
+/* Sweep To Right */
+footer .footContent {
+  margin-top: 50px;
+  border-top: 2px solid #eeeeef;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+footer .footLinks {
+  list-style: none;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  padding-left: 0; }
+
+footer .footLinks li {
+  display: inline-block; }
+
+footer .footLinks li:first-child a {
+  padding-left: 0; }
+
+footer .footLinks li:last-child a {
+  padding-right: 0; }
+
+footer .footLinks li a {
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 10px 8px;
+  color: #000; }
+
+@media screen and (max-width: 767px) {
+  footer .footLogo {
+    text-align: center;
+    padding-top: 10px; }
+  footer .footLinks {
+    margin-bottom: 0; }
+  footer .footLinks li {
+    display: block;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #f7f7f7; }
+  footer .footLinks li:last-child {
+    border-bottom: 0; }
+  footer .footLinks li a {
+    font-size: 14px; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer .footLogo img {
+    width: 150px; }
+  footer .footLinks {
+    margin-top: 8px;
+    margin-bottom: 8px; }
+  footer .footLinks li a {
+    padding: 10px 5px;
+    font-size: 14px;
+    text-transform: capitalize; } }
+
+.copyright {
+  background-color: #e6e6e6;
+  padding: 7px 0; }
+
+.copyright p {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 13px;
+  text-align: center; }

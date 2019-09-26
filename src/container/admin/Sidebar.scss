@@ -1,0 +1,61 @@
+// Sidebar Styles starts Here
+@import '../../base.scss';
+
+.sideBar {
+    width: 130px;
+    position: fixed;
+    top: 85px;
+    height: calc(100vh - 85px);
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    
+    .sidebar-nav {
+        a {
+            border-bottom: 1px solid #ddddde;
+            padding: 30px 0;
+            text-align: center;
+            position: relative;
+            color: #8e8e93;
+            font-size: 13px;
+
+            span {
+                display: block;
+                margin-top: 8px;
+            }
+
+            &:hover {
+                color: #0086c5;
+
+                svg {
+                    path {
+                        fill: #0086c5!important;
+                    }
+                }
+            }
+
+            &.active {
+                color: #0086c5;
+
+                svg {
+                    path {
+                        fill: #0086c5!important;
+                    }
+                }
+                
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-color: transparent transparent #0086c5 transparent;
+                    border-width: 0 0 25px 25px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
+/* Bootstrap 4 Class .card css */
+/* ON/OFF toggle*/
+/* Sweep To Bottom */
+/* Sweep To Right */
+.buy-plan-page .card {
+  border: 0;
+  border-top: 5px solid #0086c5;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.05);
+  margin-top: 30px; }
+
+.buy-plan-page .card .card-header {
+  background-color: #ffffff; }
+
+.buy-plan-page .card .card-header h2 {
+  font-size: 22px;
+  color: #0086c5;
+  margin: 10px 0; }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .buy-plan-page .card .card-header h2 {
+    font-size: 20px;
+    margin: 5px 0; } }
+
+.buy-plan-page .card .card-header p {
+  color: #292929;
+  font-size: 14px; }
+
+@media screen and (max-width: 767px) {
+  .buy-plan-page .card .card-body .personal_details {
+    flex-direction: column; }
+  .buy-plan-page .card .card-body .personal_details .buy_plan_Img {
+    order: -1; } }
+
+.buy-plan-page .card .card-body h2 {
+  font-size: 22px;
+  color: #0086c5;
+  margin: 10px 0; }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .buy-plan-page .card .card-body h2 {
+    font-size: 20px;
+    margin: 5px 0; } }
+
+.buy-plan-page .card .card-body .user-plan {
+  text-align: center;
+  color: #000000;
+  padding: 25px 15px 15px; }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .buy-plan-page .card .card-body .user-plan {
+    padding: 20px 0px; } }
+
+.buy-plan-page .card .card-body .user-plan .plan-title h3 {
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+.buy-plan-page .card .card-body .user-plan .plan-title p {
+  font-size: 20px;
+  opacity: 0.53; }
+
+.buy-plan-page .card .card-body .user-plan ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0; }
+
+.buy-plan-page .card .card-body .user-plan ul li {
+  border-bottom: 1px solid rgba(141, 141, 147, 0.5);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 16px; }
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .buy-plan-page .card .card-body .user-plan ul li {
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px; } }
+
+.buy-plan-page .card .card-body .user-plan ul li:first-child {
+  border-top: 1px solid rgba(141, 141, 147, 0.5); }
+
+.buy-plan-page .card .card-body .user-plan ul li:last-child {
+  border-bottom: 0; }
+
+.buy-plan-page .card .card-body .user-plan ul li svg {
+  margin-right: 10px; }
+
+.buy-plan-page .card .card-body .hvr-sweep-to-bottom {
+  color: #ffffff;
+  padding: 5px 15px;
+  display: block;
+  margin: 13px auto 0;
+  border-radius: 50px;
+  width: 201px;
+  text-align: center; }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .buy-plan-page .card .card-body .hvr-sweep-to-bottom {
+    width: 175px; } }
+
+.buy-plan-page .card .card-body .green-link {
+  background-color: #76be3e; }
+
+.buy-plan-page .card .card-body .green-link::before {
+  background-color: #0086c5; }
+
+.buy-plan-page .card .card-body .blue-link {
+  background-color: #0086c5; }
+
+.buy-plan-page .card .card-body .blue-link:hover {
+  border-color: #76be3e; }
+
+.buy-plan-page .card .card-body .blue-link:focus {
+  box-shadow: none;
+  border-color: #76be3e; }
+
+.buy-plan-page .card .card-body form .content-row {
+  background-color: #ffffff;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 25px; }
+
+.buy-plan-page .card .card-body form .content-row .form-group {
+  width: 100%; }
+
+.buy-plan-page .card .card-body form .content-row label.form-label {
+  font-size: 13px;
+  color: #3d464d; }
+
+.buy-plan-page .card .card-body form .content-row label.form-label span {
+  color: #ff0000; }
+
+.buy-plan-page .card .card-body form .content-row .form-control {
+  font-size: 14px; }
+
+@media screen and (min-width: 1199px) {
+  .buy-plan-page .card .card-body form .content-row .form-control {
+    width: 351px; } }
+
+@media screen and (max-width: 767px) {
+  .buy-plan-page .card .card-body form .content-row .form-control {
+    width: 100%; } }
+
+.buy-plan-page .card .card-body form .content-row .form-control.redirect_url_input {
+  width: 100%; }
+
+.buy-plan-page .card .card-body form .content-row .icon-group .icon-set {
+  right: 15%;
+  top: 50%; }
+
+@media screen and (max-width: 767px) {
+  .buy-plan-page .card .card-body form .content-row .icon-group .icon-set {
+    right: 3%; } }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .buy-plan-page .card .card-body form .content-row .icon-group .icon-set {
+    right: 10px; } }
+
+.buy-plan-page .card .card-body form .content-row .icon-group .icon-set.trash {
+  text-align: center;
+  background-color: #e9ecef;
+  border-radius: 50%;
+  height: 32px;
+  line-height: 30px;
+  width: 32px; }
+
+.buy-plan-page .card .card-body form .content-row .card_number_input {
+  width: 75%; }
+
+@media screen and (max-width: 1199px) {
+  .buy-plan-page .card .card-body form .content-row .card_number_input {
+    width: calc(100% - 50px); } }
+
+.buy-plan-page .card .card-body form .button-row {
+  text-align: center;
+  margin-top: 50px; }
+
+@media screen and (max-width: 1199px) {
+  .buy-plan-page .card .card-body form .button-row {
+    margin-top: 25px; } }
+
+.buy-plan-page .card .card-body form .button-row .btn {
+  vertical-align: middle; }
+
+.buy-plan-page .card .card-body form .button-row .btn-custom {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  min-width: 135px;
+  height: 36px;
+  margin-bottom: 10px;
+  padding: 6px 25px; }
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .buy-plan-page .card .card-body form .button-row .btn-custom {
+    width: 75%; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .buy-plan-page .card .card-body form .button-row .btn-custom {
+    margin-left: 5px;
+    margin-right: 5px;
+    min-width: 85px;
+    font-size: 14px; } }
+
+.buy-plan-page .card .card-body form .button-row .btn-light-blue:hover {
+  color: #ffffff;
+  background-color: #06608b; }
+
+.buy-plan-page .card .card-body form .button-row .btn-link {
+  color: #000000;
+  background-color: #dbdbdb; }
+
+.buy-plan-page .card .card-body form .button-row .btn-link:hover {
+  text-decoration: none; }
+
+.buy-plan-page .card .card-body form .button-row .btn-back {
+  color: #ffffff;
+  background-color: #76be3e;
+  line-height: 30px; }
+
+.buy-plan-page .card .card-body form .button-row .btn-back:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #218838;
+  border-color: #1e7e34; }

@@ -1,0 +1,356 @@
+// Transact list Styles starts Here
+@import '../../../base.scss';
+
+.transaction-list {
+    position: relative;
+
+    .status-label{
+        display: inline-block;
+        float: left;
+        padding: 9px 11px 0px 0;
+        font-size: 15px;
+    }
+    input[name="search"] {
+        border-radius: 50px;
+        border: 0;
+        padding: 10px 40px 10px 15px;
+        background-image: url(../../../assets/images/admin/search.png);
+        background-repeat: no-repeat;
+        background-position: 93% center;
+        background-size: 18px;
+        margin-bottom: 15px;
+        float: right;
+        width: 200px;
+        font-style: italic;
+        color: $btn-light-green;
+        font-size: 14px;
+        box-shadow: 1px 1px 6px 2px rgba(0,0,0,0.05);
+
+        &::-webkit-input-placeholder { /* Edge */
+            color: $btn-light-green;
+        }
+
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: $btn-light-green;
+        }
+
+        &::placeholder {
+            color: $btn-light-green;
+        }
+    }
+
+    select {
+        border-radius: 50px;
+        border: 0;
+        padding: 10px 40px 10px 15px;
+        background-position: 90% center;
+        margin-bottom: 15px;
+        float: left;
+        width: 161px;
+        color: $btn-light-green;
+        font-size: 14px;
+        background-image: url(../../../assets/images/admin/drop-down-arrow.svg) !important;
+        background-repeat: no-repeat !important;
+        background-position: 93% center !important;
+        background-size: 10px !important;
+        box-shadow: 1px 1px 6px 2px rgba(0,0,0,0.05);
+    }
+
+    .form-search {
+        position: absolute;
+        right: 210px;
+        padding: 8px;
+    }
+
+    .ReactTable {
+        border: 0;  
+        width: 100%;
+
+        .rt-thead {
+            background-color: $color-white;
+            border-bottom: solid 10px #f8f8f8;
+
+            &.-header {
+                box-shadow: none;
+            }
+
+            .rt-tr {
+                text-align: left;
+
+                .rt-th {
+                    color: $btn-light-blue;
+                    font-size: 14px;
+                    padding: 20px 15px;
+                    box-shadow: none;
+                    border: 0;
+                    font-weight: 600;
+                }
+
+                .rt-td {
+                    color: $btn-light-blue;
+                    font-size: 14px;
+                    padding: 20px 15px;
+                    box-shadow: none;
+                    border: 0;
+                    font-weight: 600;
+                }
+
+            }
+        }
+        .rt-tbody {
+            .rt-tr-group {
+                border-bottom: solid 10px #f8f8f8;
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+        }
+
+        &.-highlight {
+            .rt-tbody {
+                .rt-tr{
+                    &:not(.-padRow) {
+                        &:hover {
+                            background-color: $color-white;
+                        }
+                    }
+                    
+                    &:hover {
+                        .rt-td {
+                            color: $btn-light-blue;
+
+                            svg {
+                                path {
+                                    fill: $btn-light-blue !important;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        } 
+
+        .rt-td {
+            font-size: 15px;
+            color: $color-black;
+            padding: 10px 15px;
+                    
+            .status_paid {
+                background-color: $btn-light-green;
+                border-radius: 50px;
+                color: $color-white;
+                text-align: center;
+                padding: 4.5px 10px;
+                min-width: 119px;
+                display: inline-block;
+            }
+
+            .status_failed {
+                background-color: $failed-status;
+                border-radius: 50px;
+                color: $color-black;
+                text-align: center;
+                padding: 4.5px 10px;
+                min-width: 119px;
+                display: inline-block;
+            }
+            .card_icon {
+                display: block;
+                // text-align: center;
+            }
+        }
+
+        .rt-tr {
+            align-items: center;
+            background-color: $color-white;
+
+            .rt-th {
+                &.-cursor-pointer{
+                    background-image: url(../../../assets/images/admin/sort.png);
+                    background-repeat: no-repeat;
+                    background-position: 93% center;
+                    
+                    &.-sort-asc{
+                        background-image: url(../../../assets/images/admin/sort_asc.png);
+                        background-repeat: no-repeat;
+                        background-position: 93% center;
+                    }
+                    &.-sort-desc{
+                        background-image: url(../../../assets/images/admin/sort_desc.png);
+                        background-repeat: no-repeat;
+                        background-position: 93% center;
+                    }
+                }
+            }
+        }
+
+        &.-striped {
+            .rt-tr{
+                &.-odd {
+                    background-color: $color-white;
+                }
+            }
+        }
+
+        .rt-tfoot {
+            display: none;
+        }
+
+        .-pagination {
+            border-top: 0;
+            padding: 0;
+            border-radius: 27px;
+            margin: 25px auto;
+            width: 60%;
+            
+            .-btn[disabled] {
+                opacity: 1;
+                cursor: no-drop;
+            }
+
+            .-center {
+                // flex: 1 1;
+                background-color: $color-white;
+                
+                .select-wrap {
+                    select {
+                        margin-bottom: 0;
+                        box-shadow: none;
+                        color: $color-black;
+                    }
+                }
+            }
+
+            .-next {
+                flex: none;
+                .-btn {
+                    border-top-right-radius: 50px;
+                    border-bottom-right-radius: 50px;
+                    padding: 3px 16px 3px 10px;
+                    float: left;
+                }
+            }
+            .-previous {
+                flex: none;
+                .-btn {
+                    border-top-left-radius: 50px;
+                    border-bottom-left-radius: 50px;
+                    padding: 3px 10px 3px 16px;
+                    float: right;
+                }
+            }
+
+            .-btn {
+                width: auto;
+                background-color: $color-white;
+                font-size: 15px;
+                font-weight: 600;
+                color: $color-black;
+                
+                &:not([disabled]){
+                    &:hover {
+                        background-color: $btn-light-blue;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+
+
+        .datatable-action {
+            span {
+                padding: 5px 7px;
+                display: inline-block;
+                vertical-align: middle;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            a {
+                padding: 5px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }    
+}
+
+
+.transaction-list-page-content {
+    .card {        
+        @include card;
+
+        .card-body{
+            form {
+                .content-row {
+                    @include form-row;
+                    
+                    .price-group {
+                        position: relative;
+
+                        .icon-set {
+                            position: absolute;
+                            left: 0;
+                            width: 42px;
+                            height: 34px;
+                            line-height: 34px;
+                            border: 1px solid #dedede;
+                            background-color: #f4f2f2;
+                            border-radius: 3px;
+                            z-index: 1;
+                            text-align: center;
+                        }
+
+                        .form-control {
+                            padding: 5px 5px 5px 50px;
+                        }
+                    }
+
+                    .form-control {
+                        width: 351px;
+                        font-size: 14px;
+                    }
+
+                    .benefit-inputs {
+                        .form-control {
+                            display: inline-block;
+                            vertical-align: middle
+                        }
+                        .benefit-input-wrap {
+                            margin-bottom: 1rem;
+                            span {
+                                display: inline-block;
+                                vertical-align: middle;
+                                cursor: pointer;
+                                padding: 5px;
+                            }
+                        }
+                    }
+
+                    textarea.form-control {
+                        width: 100%;
+                    }
+                }
+
+                .button-row {
+                    text-align: center;
+
+                    .btn {
+                        vertical-align: middle;
+                    }
+
+                    .btn-custom {
+                        @include btn-custom;
+                    }
+                    .btn-link {
+                        @include btn-link;
+                    }
+                    .btn-back {
+                        @include btn-back;
+                    }
+                }
+            }
+        }
+    }
+}

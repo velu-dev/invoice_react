@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
+/* Bootstrap 4 Class .card css */
+/* ON/OFF toggle*/
+/* Sweep To Bottom */
+/* Sweep To Right */
+.header-nav.bg-light {
+  background-color: #ffffff !important;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);
+  min-height: 85px; }
+
+.header-nav .admin-nav {
+  align-items: center;
+  position: relative; }
+
+.header-nav .admin-nav h6 {
+  color: #0086c5;
+  margin-bottom: 0;
+  line-height: normal; }
+
+.header-nav .admin-nav .setting_icon {
+  border-right: 2px solid #e5e5e7; }
+
+.header-nav .admin-nav .nav-link {
+  color: #0086c5;
+  padding: 0;
+  margin: 0 15px;
+  cursor: pointer; }
+
+.header-nav .admin-nav .nav-link:last-child {
+  border-right-color: transparent; }
+
+.header-nav .admin-nav .dropdown .dropdown-toggle {
+  background: transparent;
+  border: none;
+  margin: 0 0 0 15px;
+  border-right: 2px solid #e5e5e7;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0; }
+
+.header-nav .admin-nav .dropdown .dropdown-toggle:empty::after {
+  margin-right: 15px; }
+
+.header-nav .admin-nav .dropdown .dropdown-menu {
+  right: 10px;
+  left: auto;
+  padding: 22px 24px; }
+
+.header-nav .admin-nav .dropdown .dropdown-menu.show:after, .header-nav .admin-nav .dropdown .dropdown-menu.show:before {
+  right: 4%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  z-index: 99;
+  bottom: 100%; }
+
+.header-nav .admin-nav .dropdown .dropdown-menu.show:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: #fff;
+  border-width: 7px;
+  margin-right: 1px; }
+
+.header-nav .admin-nav .dropdown .dropdown-menu.show:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-bottom-color: #f1f1f1;
+  border-width: 9px;
+  margin-right: -1px; }
+
+.header-nav .admin-nav .dropdown .dropdown-menu.show .dropdown-item:hover, .header-nav .admin-nav .dropdown .dropdown-menu.show .dropdown-item:focus {
+  background-color: transparent; }
+
+.dropdown-toggle {
+  position: relative; }
+
+.dropdown-toggle::after {
+  content: '';
+  background-image: url(../../assets/images/admin/settings.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 21px;
+  width: 21px;
+  height: 21px;
+  vertical-align: middle; }
+
+#basic-navbar-nav .admin-setting {
+  margin: 0 20px;
+  position: relative;
+  cursor: pointer; }
+
+#basic-navbar-nav .admin-setting:before {
+  content: "|";
+  position: absolute;
+  right: -24px;
+  color: #e5e5e7;
+  font-size: 25px;
+  top: -7px; }

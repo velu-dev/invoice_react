@@ -1,0 +1,483 @@
+// Terms Page Styles starts Here
+@import '../base.scss';
+
+.user_page_breadcrumb {
+    background-color: #f9f9f9;
+    padding: 15px 0;
+    
+    @include mX(320px, 575px){
+        padding: 15px;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+
+        li {
+            font-variant-caps: small-caps;
+            color: $color-black;
+            font-size: 16px;
+            font-weight: 400;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+
+            &+li {
+                padding-left: .5rem;
+
+                &::before {
+                    content: "/";
+                    display: inline-block;
+                    padding-right: .5rem;
+                    color: $color-black;
+                }
+            }
+
+            a {
+                font-variant-caps: small-caps;
+                color: $color-black;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.user-settings-page {
+    .card {
+        border: 0;
+        border-top: 5px solid $btn-light-blue;
+        background-color: $color-white;
+        border-radius: 10px;
+        box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.05);
+        margin-top: 30px;
+
+        .card-header {
+            background-color: $color-white;
+            .btn-change-password {
+                float: right;
+                border-radius: 50px;
+                background-color: $btn-light-blue;
+                font-size: 15px;
+                min-width: 171px;
+                border-color: $btn-light-blue;
+                margin-top: 10px;
+
+                @include mX(320px, 480px){
+                    font-size: 14px;
+                    min-width: unset;
+                }
+
+                @include mX(481px, 767px){
+                    margin-top: 5px;
+                }
+                
+                &:hover {
+                    background-color: $btn-dark-blue;
+                    border-color: $btn-dark-blue;
+                    box-shadow: 0 0 0 0.05rem $btn-dark-blue;
+                }
+
+                &:focus {
+                    box-shadow: 0 0 0 0.05rem $btn-dark-blue;
+                }
+            }
+
+            h2 {
+                font-size: 22px;
+                color: $btn-light-blue;
+                margin: 10px 0;
+
+                @include mX(768px, 1199px){
+                    font-size: 20px;
+                    margin: 5px 0;
+                }
+            }
+            p {
+                color: #292929;
+                font-size: 14px;
+            }
+        }
+
+        .card-body {
+            .stripe-description {
+                text-align: center;
+                padding-top: 80px;
+                padding-bottom: 80px;
+
+                @include mX(767px){
+                    padding-top: 25px;
+                    padding-bottom: 25px;
+                }
+
+                h3 {
+                    font-size: 18px;
+                    color: #3d464d;
+                    margin-bottom: 25px;
+                    line-height: 30px;
+
+                    @include mX(991px){
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+
+                .button-row {
+                    text-align: center;
+
+                    .btn {
+                        vertical-align: middle;
+                    }
+
+                    .btn-custom {
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        font-size: 15px;
+                        min-width: 135px;
+                        height: 36px;
+                        margin-bottom: 10px;
+                        padding: 6px 25px;
+                        display: inline-block;
+
+                        @include mX(320px, 575px){
+                            width: 75%;
+                        }
+
+                        @include mX(768px, 991px){
+                            margin-left: 5px;
+                            margin-right: 5px;
+                            min-width: 85px;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .btn-light-blue {
+                        &:hover {
+                            color: $color-white;
+                            background-color: $btn-dark-blue;
+                        }
+                    }
+
+                    .btn-link {
+                        color: $color-black;
+                        background-color: #dbdbdb;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                    .btn-back {
+                        color: $color-white;
+                        background-color: $btn-light-green;
+                        line-height: 30px;
+
+                        &:hover {
+                            text-decoration: none;
+                            color: $color-white;
+                            background-color: #218838;
+                            border-color: #1e7e34;
+                        }
+                    }
+                }
+            }
+
+            form {
+                .content-row {
+                    background-color: $color-white;
+                    margin-left: 0;
+                    margin-right: 0;
+                    margin-bottom: 25px;
+
+                    .form-group {
+                        width: 100%;
+                    }
+
+                    label.form-label {
+                        font-size: 13px;
+                        color: #3d464d;
+
+                        span {
+                            color: #ff0000;
+                        }
+                    }
+                    .form-control {
+                        @include mI(1199px){
+                            width: 351px;
+                        }
+                        font-size: 14px;
+
+                        @include mX(767px){
+                            width: 100%;
+                        }
+
+                        &.redirect_url_input {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .button-row {
+                    text-align: center;
+
+                    .btn {
+                        vertical-align: middle;
+                    }
+
+                    .btn-custom {
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        font-size: 15px;
+                        min-width: 135px;
+                        height: 36px;
+                        margin-bottom: 10px;
+                        padding: 6px 25px;
+
+                        @include mX(320px, 575px){
+                            width: 75%;
+                        }
+
+                        @include mX(768px, 991px){
+                            margin-left: 5px;
+                            margin-right: 5px;
+                            min-width: 85px;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .btn-light-blue {
+                        &:hover {
+                            color: $color-white;
+                            background-color: $btn-dark-blue;
+                        }
+                    }
+
+                    .btn-link {
+                        color: $color-black;
+                        background-color: #dbdbdb;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                    .btn-back {
+                        color: $color-white;
+                        background-color: $btn-light-green;
+                        line-height: 30px;
+
+                        &:hover {
+                            text-decoration: none;
+                            color: $color-white;
+                            background-color: #218838;
+                            border-color: #1e7e34;
+                        }
+                    }
+                }
+
+                .add-card-form {
+                    &:first-child {
+                        border-top: 0;
+                    }
+                    
+                    border-top: 1px solid rgba(0, 0, 0, 0.125);
+                    padding: 20px;
+                    
+                    .content-row {
+                        .col-md-1 {
+                            width: auto;
+                            max-width: fit-content;    
+                            margin-bottom: 0;
+                            
+                            input {
+                                display: block;
+                            }
+                        }
+                        @include mI(1199px){
+                            .col-md-5 {
+                                max-width: calc(41.66667% + 38px);
+
+                                flex: 0 0 calc(41.66667% + 38px);
+                            }
+                        }
+
+                        .card_number_input {
+                            width: 80%;
+                            @include mX(768px, 1199px){
+                                width: 76%;
+                            }
+                        }
+                        .expiry_date_input {
+                            width: 81.5%;
+                            @include mX(768px, 991px){
+                                width: 65%;
+                            }
+                            @include mX(992px, 1199px){
+                                width: 79%;
+                            }
+                        }
+
+                        @include mX(767px){
+                            
+                            .card_number_input {
+                                width: calc(100% - 50px);
+                            }
+                            .expiry_date_input {
+                                width: calc(100% - 50px);
+                            }
+                        }
+                        .icon-group {
+                            margin-bottom: 0;
+
+                            .icon-set {
+                                right: 8%;
+                                top: 50%;
+                                @include mX(767px){
+                                    right: 3%;
+                                }
+                                
+                                &.trash {
+                                    text-align: center;
+                                    background-color: #e9ecef;
+                                    border-radius: 50%;
+                                    height: 32px;
+                                    line-height: 30px;
+                                    width: 32px;
+                                }
+                            }
+                        } 
+                    }
+                }
+            }
+
+            &.redirect-url-form {
+                padding: 25px 15px;
+
+                form {
+                    .content-row {
+                        margin-bottom: 5px;
+                        .form-control {
+                            width: 100%;
+                        }
+                    }
+
+                    .button-row {
+                        .btn-custom {
+                            margin-left: 10px;
+                            margin-right: 0;
+                            min-width: 100px;
+
+                            &:first-child {
+                                margin-left: 0;
+                            }
+
+                            @include mX(768px, 1199px){
+                                min-width: 80px;
+                                margin-left: 5px;
+                                padding: 6px 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .trial-plan {
+                text-align: center;
+                color: $color-black;
+                padding: 25px 0;
+
+                @include mX(768px, 1199px){
+                    padding: 20px 0px;
+                }
+                
+                .plan-title {
+                    p {
+                        font-size: 14px;
+                        color: $color-black;
+
+                        @include mX(1199px){
+                            br {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .count_down {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    text-align: center;
+
+                    .days_count {
+                        span {
+                            display: inline-block;
+                            vertical-align: middle;
+                            background-color: $btn-light-blue;
+                            color: $color-white;
+                            font-size: 60px;
+                            line-height: 66px;
+                            padding: 0px 15px;
+                            border-radius: 10px;
+                            margin: 0 2px;
+                            font-weight: 600;
+                        }
+                    }
+
+                    p {
+                        color: #292929;
+                        font-size: 14px;
+                        margin-bottom: 0;
+                        margin-top: 5px;
+                    }
+                }
+            }
+            
+            .hvr-sweep-to-bottom {
+                color: $color-white;
+                padding: 5px 15px;
+                display: block;
+                margin: 13px auto 0;
+                border-radius: 50px;
+                width: 201px;
+                text-align: center;
+
+                @include mX(768px, 1199px){
+                    width: 175px;
+                }
+            }
+            .green-link {
+                background-color: $btn-light-green;
+                border-color: $btn-light-green;
+
+                &:hover {
+                    border-color: $btn-light-blue; 
+                }
+                
+                &::before {
+                    background-color: $btn-light-blue;
+                    border-color: $btn-light-blue;
+                }
+                
+                &:focus {
+                    box-shadow: none;
+                    border-color: $btn-light-blue; 
+                }
+            }
+            .blue-link {
+                background-color: $btn-light-blue;
+
+                &:hover {
+                    border-color: $btn-light-green; 
+                }
+                
+                &::before {
+                    background-color: $btn-light-green;
+                    border-color: $btn-light-green;
+                }
+
+                &:focus {
+                    box-shadow: none;
+                    border-color: $btn-light-green; 
+                }
+            }
+        }
+    }
+}
